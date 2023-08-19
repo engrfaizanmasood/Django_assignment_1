@@ -1,0 +1,22 @@
+{% extends "myapp/base.html" %}
+
+{% block header%}
+{% include "myapp/header.html" %}
+{% endblock%}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block content %}
+    
+    <h1>This is Index page</h1>
+    <p>
+        <a href="{% url 'myapp:detail' %}">Go to Detail page</a>
+    </p>
+
+{% endblock %}
+
+{% block footer%}
+    {% include "myapp/footer.html" %}
+{% endblock%}
